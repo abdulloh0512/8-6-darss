@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
 
 function HomeHeader() {
-  // styled
   const HomeWrapp = styled.div`
     padding: 20px;
   `;
@@ -32,10 +31,12 @@ function HomeHeader() {
     height: 82px;
     background-color: #3d3d8c;
     border-radius: 10px;
+    margin-bottom: 24px;
+    cursor: pointer;
   `;
 
   const CardWrapp = styled.li``;
-  ("");
+ 
   return (
     <HomeWrapp>
       <Images>
@@ -47,7 +48,7 @@ function HomeHeader() {
           className="cursor-pointer"
         />
         <img
-          src="Forward.svg"
+          src="../Forward.svg"
           alt=""
           width={40}
           height={40}
@@ -60,25 +61,25 @@ function HomeHeader() {
 
         <UlWrapp>
           <CardWrapp>
-            <LiWrapp className="mb-6">
-              <img src="Album Cover.svg" alt="" width={82} height={82} />
+            <LiWrapp >
+              <img src="./cover1.svg" alt="" width={82} height={82} />
             </LiWrapp>
-            <LiWrapp className="mb-6">
-              <img src="Album Cover (1).svg" alt="" width={82} height={82} />
+            <LiWrapp >
+              <img src="./cover2.svg" alt="" width={82} height={82} />
             </LiWrapp>{" "}
             <LiWrapp>
-              <img src="Album Cover (2).svg" alt="" width={82} height={82} />
+              <img src="./cover3.svg" alt="" width={82} height={82} />
             </LiWrapp>
           </CardWrapp>
           <CardWrapp>
-            <LiWrapp className="mb-6">
-              <img src="Album Cover (3).svg" alt="" width={82} height={82} />
+            <LiWrapp >
+              <img src="./cover4.svg" alt="" width={82} height={82} />
             </LiWrapp>
-            <LiWrapp className="mb-6">
-              <img src="Album Cover (4).svg" alt="" width={82} height={82} />
+            <LiWrapp >
+              <img src="./cover5.svg" alt="" width={82} height={82} />
             </LiWrapp>{" "}
             <LiWrapp>
-              <img src="Album Cover (5).svg" alt="" width={82} height={82} />
+              <img src="./cover6.svg" alt="" width={82} height={82} />
             </LiWrapp>
           </CardWrapp>
         </UlWrapp>
