@@ -27,15 +27,24 @@ function HomeHeader() {
     gap: 20px;
   `;
   const LiWrapp = styled.li`
-    width: 480px;
+    width: 400px;
     height: 82px;
     background-color: #3d3d8c;
     border-radius: 10px;
     margin-bottom: 24px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 30px;
   `;
 
-  const CardWrapp = styled.li``;
+  const CardWrapp = styled.ul`
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  `;
  
   return (
     <HomeWrapp>
@@ -63,23 +72,29 @@ function HomeHeader() {
           <CardWrapp>
             <LiWrapp >
               <img src="./cover1.svg" alt="" width={82} height={82} />
+              <h3>Chill Mix</h3>
             </LiWrapp>
             <LiWrapp >
               <img src="./cover2.svg" alt="" width={82} height={82} />
+              <h3>Daily Mix 1</h3>
             </LiWrapp>{" "}
             <LiWrapp>
               <img src="./cover3.svg" alt="" width={82} height={82} />
+              <h3>Folk & Acoustic Mix</h3>
             </LiWrapp>
           </CardWrapp>
           <CardWrapp>
             <LiWrapp >
               <img src="./cover4.svg" alt="" width={82} height={82} />
+              <h3>Pop Mix</h3>
             </LiWrapp>
             <LiWrapp >
               <img src="./cover5.svg" alt="" width={82} height={82} />
+              <h3>Daily Mix 5</h3>
             </LiWrapp>{" "}
             <LiWrapp>
               <img src="./cover6.svg" alt="" width={82} height={82} />
+              <h3>Daily Mix 4</h3>
             </LiWrapp>
           </CardWrapp>
         </UlWrapp>
